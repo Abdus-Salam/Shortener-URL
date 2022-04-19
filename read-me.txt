@@ -1,0 +1,21 @@
+For creating the webpage for URLs shortener, I used Laravel8 and VueJS2. Laravel and VueJS are totally two separte project.
+Laravel is for server side and VueJS is for client side.
+
+To run the project, follow the few step
+
+1. Run laravel app with 8000 port. If you use another port, please also change in VueJS baseURL(main.ts).
+   .sql file attached. Please check .env file for db name or credentials.
+2. Run VueJS with
+   $ npm run serve
+3. Login with following credentials 
+   Email : admin@gmail.com
+   Password : Bangla71
+   After login, click  "Go to shortener URL" link or hit /urls route.
+4. + icon is for generate Shortener URL.
+5. To check the redirect from short to original url -> copy the short link and hit the browser.
+
+This project recognize the duplicate URL and show as toast message if already generate.
+URL must in 6 symbols which contains alphanumeric symbols.
+URL didn't checked with Google Safe Browsing API.
+
+Thanks

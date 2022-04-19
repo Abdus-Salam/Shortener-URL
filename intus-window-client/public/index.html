@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <script src="https://unpkg.com/nprogress"></script>
+  <style>
+
+    body{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;         
+    }
+
+    /* refresh css */
+    .refresh > .v-icon{
+      color: green !important;
+    }
+    .refresh:hover{
+      cursor: pointer;
+    }
+    /* ./end refresh */
+
+    /* active class*/
+    .active-class{
+      background-color: green !important;
+    }
+
+    .v-application .siteColor{
+          background-color: #0055a9 !important;
+          border-color: #0055a9 !important;
+    }
+
+    .siteDataTableHeading{
+            color: #3C4858;
+    }
+
+    /* table row odd even color */
+    .v-data-table td{
+            vertical-align: top !important;  
+            padding: 5px 0px !important;
+    }
+
+    .v-data-table th{ 
+        padding: 0px !important;
+    }
+
+    tbody tr:nth-of-type(odd) {
+          background-color: #e8e8e8 !important;
+    }
+
+    .v-data-table th:nth-child(1) {
+        padding-left: 15px !important;
+    }
+
+    .v-data-table td:nth-child(1) {
+        padding-left: 15px !important;
+    }
+
+    /* margin from top bar and router -view */
+    .v-data-table{
+        margin: 25px 0px;
+    }
+
+
+    /* flaot left and right */
+    .floatLeft{
+        float: left;
+    }
+
+    .floatRight{
+        float: right;
+    }
+
+  </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
